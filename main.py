@@ -23,7 +23,7 @@ from data import question_data
 from quiz_brain import Quizbrain
 question_bank = []
 for question_for_bank in question_data:
-     question_bank.append(Question(question_for_bank["text"], question_for_bank["answer"]))
+     question_bank.append(Question(question_for_bank["question"], question_for_bank["correct_answer"]))
 
 
 quiz = Quizbrain(question_bank)
